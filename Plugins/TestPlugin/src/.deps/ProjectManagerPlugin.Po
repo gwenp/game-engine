@@ -1,0 +1,434 @@
+src/ProjectManagerPlugin.o: src/ProjectManagerPlugin.cpp \
+ src/ProjectManagerPlugin.hpp \
+ ../../src/api/Interfaces/IProjectManagerPlugin.hpp \
+ ../../src/api/Interfaces/../Plugin.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stringfwd.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/char_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algobase.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/functexcept.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/exception_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cpp_type_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/type_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/numeric_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_pair.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/move.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/concept_check.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/debug/debug.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/postypes.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/new_allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/new \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/exception \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/atomic_lockfree_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/localefwd.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iosfwd \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream_insert.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cxxabi_forced.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_function.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/backward/binders.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/range_access.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/atomicity.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iostream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ostream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ios \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ios_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/streambuf \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwctype \
+ /usr/include/wctype.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf_iterator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/istream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/istream.tcc \
+ ../../src/api/Interfaces/../CommunicativeObject.hpp \
+ ../../src/api/Interfaces/../PluginMessage.hpp \
+ ../../src/api/Interfaces/ProjectFile/IProjectFileElement.hpp \
+ ../../src/api/Interfaces/ProjectFile/IRessource.hpp \
+ /usr/include/sigc++-2.0/sigc++/sigc++.h \
+ /usr/include/sigc++-2.0/sigc++/signal.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/list \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_list.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/list.tcc \
+ /usr/include/sigc++-2.0/sigc++/signal_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstddef \
+ /usr/lib/sigc++-2.0/include/sigc++config.h \
+ /usr/include/sigc++-2.0/sigc++/type_traits.h \
+ /usr/include/sigc++-2.0/sigc++/trackable.h \
+ /usr/include/sigc++-2.0/sigc++/functors/slot.h \
+ /usr/include/sigc++-2.0/sigc++/visit_each.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h \
+ /usr/include/sigc++-2.0/sigc++/functors/functor_trait.h \
+ /usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h \
+ /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h \
+ /usr/include/sigc++-2.0/sigc++/limit_reference.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h \
+ /usr/include/sigc++-2.0/sigc++/functors/slot_base.h \
+ /usr/include/sigc++-2.0/sigc++/connection.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bind.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h \
+ /usr/include/sigc++-2.0/sigc++/reference_wrapper.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/hide.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/retype.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/compose.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/lambda.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/operator.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/group.h \
+ /usr/include/sigc++-2.0/sigc++/functors/functors.h \
+ ../../src/api/PluginManager.hpp ../../src/api/CommunicativeObject.hpp \
+ ../../src/api/Plugin.hpp ../../src/api/PluginMessage.hpp \
+ ../../src/api/Config.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/vector \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_construct.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/alloc_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_uninitialized.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_vector.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_bvector.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/vector.tcc \
+ /usr/include/dlfcn.h /usr/include/bits/dlfcn.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/utility \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_relops.h
+
+src/ProjectManagerPlugin.hpp:
+
+../../src/api/Interfaces/IProjectManagerPlugin.hpp:
+
+../../src/api/Interfaces/../Plugin.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/char_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algobase.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/functexcept.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/exception_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/type_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/numeric_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_pair.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/move.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/debug/debug.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/postypes.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/new_allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/new:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/exception:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/atomic_lockfree_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/localefwd.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iosfwd:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream_insert.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_function.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/backward/binders.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/range_access.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/atomicity.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iostream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ostream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ios:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ios_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/streambuf:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/istream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/istream.tcc:
+
+../../src/api/Interfaces/../CommunicativeObject.hpp:
+
+../../src/api/Interfaces/../PluginMessage.hpp:
+
+../../src/api/Interfaces/ProjectFile/IProjectFileElement.hpp:
+
+../../src/api/Interfaces/ProjectFile/IRessource.hpp:
+
+/usr/include/sigc++-2.0/sigc++/sigc++.h:
+
+/usr/include/sigc++-2.0/sigc++/signal.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/list:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_list.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/list.tcc:
+
+/usr/include/sigc++-2.0/sigc++/signal_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstddef:
+
+/usr/lib/sigc++-2.0/include/sigc++config.h:
+
+/usr/include/sigc++-2.0/sigc++/type_traits.h:
+
+/usr/include/sigc++-2.0/sigc++/trackable.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/slot.h:
+
+/usr/include/sigc++-2.0/sigc++/visit_each.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/functor_trait.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:
+
+/usr/include/sigc++-2.0/sigc++/limit_reference.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/slot_base.h:
+
+/usr/include/sigc++-2.0/sigc++/connection.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bind.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h:
+
+/usr/include/sigc++-2.0/sigc++/reference_wrapper.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/hide.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/retype.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/compose.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/lambda.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/operator.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/group.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/functors.h:
+
+../../src/api/PluginManager.hpp:
+
+../../src/api/CommunicativeObject.hpp:
+
+../../src/api/Plugin.hpp:
+
+../../src/api/PluginMessage.hpp:
+
+../../src/api/Config.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/vector:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_construct.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/alloc_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_vector.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_bvector.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/vector.tcc:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/utility:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_relops.h:

@@ -1,0 +1,32 @@
+# The name of the plugin is the directory name
+# This file will help generate bindings when scripting languages are activated
+# Its goal is to generate :
+#		- IPlugin.hpp header (that declares methods) in the src/api dir 
+#		- BasePlugin.hpp (that registers methods in the map) in the Plugins/Plugin dir
+
+# Inheritance should follow the principle :
+# Plugin(Plugins/Plugin/Plugin.hpp) inherits BasePlugin(Plugins/Plugin/BasePlugin.hpp) inherits IPlugin(src/api/IPlugin.hpp)
+
+# The compiler should have an option to also generate a stub in the plugin directory
+# It is not required (at the moment) for it to be plugin-friendly, as its main goal is to write registration methods
+
+# In a while, it would be nice to support access rights, to secure the architecture
+
+      - General
+	Version 3.4.5-testing		#comments can also be at the end of a setting line
+	Inherits Plugin1 # TODO this should not be Inherits but Implements
+
+-      Dependencies
+	Plugin1
+	Plugin2 (3.1.2)
+
+- Includes
+	<string>
+
+- CallableMethods
+	void setTruc()
+	void setBordel(std::string s)
+
+- Listens
+	eventName
+	eventName2

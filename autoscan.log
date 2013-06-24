@@ -1,0 +1,8 @@
+autoscan: warning: missing AC_CHECK_HEADER_STDBOOL wanted by: 
+	src/core/ConcretePluginManager.hpp:35
+	src/core/ConcretePluginManager.cpp:26
+	src/api/PluginManager.hpp:40
+	src/core/ConcretePluginManager.cpp:34
+	src/core/ConcretePluginManager.cpp:32
+autoscan: warning: missing AC_PROG_CC wanted by: 
+	config.h.in

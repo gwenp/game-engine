@@ -1,0 +1,792 @@
+src/core/Application.o: src/core/Application.cpp src/core/Application.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stringfwd.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/char_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algobase.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/functexcept.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/exception_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cpp_type_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/type_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/numeric_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_pair.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/move.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/concept_check.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/debug/debug.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/postypes.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwchar \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stddef.h \
+ /usr/include/xlocale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/new_allocator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/new \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/exception \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/atomic_lockfree_defines.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/localefwd.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iosfwd \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream_insert.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cxxabi_forced.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_function.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/backward/binders.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/range_access.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/atomicity.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/map \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_tree.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_map.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_multimap.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iostream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ostream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ios \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ios_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/streambuf \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwctype \
+ /usr/include/wctype.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf_iterator.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream.tcc \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/istream \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/istream.tcc \
+ /usr/include/libconfig.h++ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h src/core/ConcretePluginManager.hpp \
+ src/core/../api/PluginManager.hpp \
+ src/core/../api/CommunicativeObject.hpp src/core/../api/Plugin.hpp \
+ src/core/../api/PluginMessage.hpp src/core/../api/Config.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/vector \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_construct.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/alloc_traits.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_uninitialized.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_vector.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_bvector.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/vector.tcc \
+ /usr/include/dlfcn.h /usr/include/bits/dlfcn.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/utility \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_relops.h \
+ src/core/../api/CommunicativeObject.hpp \
+ src/core/../api/utility/Terminal_colors.hpp \
+ src/core/../api/PluginMessage.hpp src/core/../api/Plugin.hpp \
+ src/core/PropertyManager.hpp \
+ src/core/../../src/api/Interfaces/IPropertyManager.hpp \
+ src/core/../../src/api/Interfaces/IProperty.hpp \
+ /usr/include/sigc++-2.0/sigc++/sigc++.h \
+ /usr/include/sigc++-2.0/sigc++/signal.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/list \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_list.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/list.tcc \
+ /usr/include/sigc++-2.0/sigc++/signal_base.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstddef \
+ /usr/lib/sigc++-2.0/include/sigc++config.h \
+ /usr/include/sigc++-2.0/sigc++/type_traits.h \
+ /usr/include/sigc++-2.0/sigc++/trackable.h \
+ /usr/include/sigc++-2.0/sigc++/functors/slot.h \
+ /usr/include/sigc++-2.0/sigc++/visit_each.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h \
+ /usr/include/sigc++-2.0/sigc++/functors/functor_trait.h \
+ /usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h \
+ /usr/include/sigc++-2.0/sigc++/functors/mem_fun.h \
+ /usr/include/sigc++-2.0/sigc++/limit_reference.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h \
+ /usr/include/sigc++-2.0/sigc++/functors/slot_base.h \
+ /usr/include/sigc++-2.0/sigc++/connection.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bind.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h \
+ /usr/include/sigc++-2.0/sigc++/reference_wrapper.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/hide.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/retype.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/compose.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/lambda.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/operator.h \
+ /usr/include/sigc++-2.0/sigc++/adaptors/lambda/group.h \
+ /usr/include/sigc++-2.0/sigc++/functors/functors.h \
+ src/core/../../src/api/Interfaces/ITimelineEditor.hpp \
+ src/core/../api/Interfaces/ISettingsPlugin.hpp \
+ src/core/../api/Interfaces/../Config.hpp \
+ src/core/../api/Interfaces/../Plugin.hpp \
+ src/core/../api/Interfaces/IMainWindowPlugin.hpp \
+ src/core/../api/Interfaces/../PluginManager.hpp \
+ src/core/../api/Interfaces/ICanvasElementFactory.hpp \
+ src/core/../api/Interfaces/ICanvasElement.hpp \
+ src/core/../api/Interfaces/IPropertyManager.hpp \
+ /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
+ /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
+ /usr/local/include/SFML/System/Clock.hpp \
+ /usr/local/include/SFML/System/Export.hpp \
+ /usr/local/include/SFML/System/Time.hpp \
+ /usr/local/include/SFML/System/Err.hpp \
+ /usr/local/include/SFML/System/InputStream.hpp \
+ /usr/local/include/SFML/System/Lock.hpp \
+ /usr/local/include/SFML/System/NonCopyable.hpp \
+ /usr/local/include/SFML/System/Mutex.hpp \
+ /usr/local/include/SFML/System/Sleep.hpp \
+ /usr/local/include/SFML/System/String.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/locale \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets_nonio.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ctime \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/time_members.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/codecvt.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets_nonio.tcc \
+ /usr/local/include/SFML/System/Thread.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/local/include/SFML/System/Thread.inl \
+ /usr/local/include/SFML/System/ThreadLocal.hpp \
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp \
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl \
+ /usr/local/include/SFML/System/Utf.hpp \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/algorithm \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algo.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/algorithmfwd.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_heap.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_tempbuf.h \
+ /usr/local/include/SFML/System/Utf.inl \
+ /usr/local/include/SFML/System/Vector2.hpp \
+ /usr/local/include/SFML/System/Vector2.inl \
+ /usr/local/include/SFML/System/Vector3.hpp \
+ /usr/local/include/SFML/System/Vector3.inl \
+ /usr/local/include/SFML/Window/Context.hpp \
+ /usr/local/include/SFML/Window/Export.hpp \
+ /usr/local/include/SFML/Window/GlResource.hpp \
+ /usr/local/include/SFML/Window/ContextSettings.hpp \
+ /usr/local/include/SFML/Window/Event.hpp \
+ /usr/local/include/SFML/Window/Joystick.hpp \
+ /usr/local/include/SFML/Window/Keyboard.hpp \
+ /usr/local/include/SFML/Window/Mouse.hpp \
+ /usr/local/include/SFML/Window/VideoMode.hpp \
+ /usr/local/include/SFML/Window/Window.hpp \
+ /usr/local/include/SFML/Window/WindowHandle.hpp \
+ /usr/local/include/SFML/Window/WindowStyle.hpp \
+ /usr/local/include/SFML/Graphics/BlendMode.hpp \
+ /usr/local/include/SFML/Graphics/Color.hpp \
+ /usr/local/include/SFML/Graphics/Export.hpp \
+ /usr/local/include/SFML/Graphics/Font.hpp \
+ /usr/local/include/SFML/Graphics/Glyph.hpp \
+ /usr/local/include/SFML/Graphics/Rect.hpp \
+ /usr/local/include/SFML/Graphics/Rect.inl \
+ /usr/local/include/SFML/Graphics/Texture.hpp \
+ /usr/local/include/SFML/Graphics/Image.hpp \
+ /usr/local/include/SFML/Graphics/RenderStates.hpp \
+ /usr/local/include/SFML/Graphics/Transform.hpp \
+ /usr/local/include/SFML/Graphics/RenderTexture.hpp \
+ /usr/local/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/local/include/SFML/Graphics/View.hpp \
+ /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
+ /usr/local/include/SFML/Graphics/Vertex.hpp \
+ /usr/local/include/SFML/Graphics/RenderWindow.hpp \
+ /usr/local/include/SFML/Graphics/Shader.hpp \
+ /usr/local/include/SFML/Graphics/Shape.hpp \
+ /usr/local/include/SFML/Graphics/Drawable.hpp \
+ /usr/local/include/SFML/Graphics/Transformable.hpp \
+ /usr/local/include/SFML/Graphics/VertexArray.hpp \
+ /usr/local/include/SFML/Graphics/CircleShape.hpp \
+ /usr/local/include/SFML/Graphics/RectangleShape.hpp \
+ /usr/local/include/SFML/Graphics/ConvexShape.hpp \
+ /usr/local/include/SFML/Graphics/Sprite.hpp \
+ /usr/local/include/SFML/Graphics/Text.hpp \
+ src/core/../api/Interfaces/IGroupCanvasElement.hpp \
+ src/core/../api/Interfaces/ICanvasElementFactory.hpp \
+ src/core/../api/Interfaces/IGroupCanvasElement.hpp \
+ src/core/../api/Interfaces/ITimelineEditorFactory.hpp \
+ src/core/../api/Interfaces/ITimelineEditor.hpp \
+ src/core/../api/Interfaces/ITimelineEditor.hpp \
+ src/core/../api/IApplication.hpp src/core/../api/PluginManager.hpp \
+ src/core/../api/Interfaces/ICanvasElement.hpp \
+ src/core/../api/Interfaces/ICanvasElementFactory.hpp \
+ src/core/../api/Interfaces/ITimelineEditorFactory.hpp \
+ src/core/../api/Interfaces/ITimelineEditor.hpp \
+ src/core/../api/Interfaces/Animation_management/IAnimationManager.hpp \
+ src/core/../api/Interfaces/Animation_management/IAnimationSequence.hpp \
+ src/core/../api/Interfaces/Animation_management/../../Plugin.hpp \
+ src/core/../api/Interfaces/IGroupCanvasElement.hpp
+
+src/core/Application.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/char_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algobase.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/functexcept.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/exception_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/type_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/numeric_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_pair.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/move.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/debug/debug.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/postypes.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/new_allocator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/new:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/exception:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/atomic_lockfree_defines.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/localefwd.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iosfwd:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream_insert.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_function.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/backward/binders.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/range_access.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/atomicity.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/map:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_tree.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_map.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_multimap.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/iostream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ostream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ios:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ios_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_classes.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/streambuf:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_ios.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/ostream.tcc:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/istream:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/istream.tcc:
+
+/usr/include/libconfig.h++:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+src/core/ConcretePluginManager.hpp:
+
+src/core/../api/PluginManager.hpp:
+
+src/core/../api/CommunicativeObject.hpp:
+
+src/core/../api/Plugin.hpp:
+
+src/core/../api/PluginMessage.hpp:
+
+src/core/../api/Config.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/vector:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_construct.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ext/alloc_traits.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_vector.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_bvector.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/vector.tcc:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/utility:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_relops.h:
+
+src/core/../api/CommunicativeObject.hpp:
+
+src/core/../api/utility/Terminal_colors.hpp:
+
+src/core/../api/PluginMessage.hpp:
+
+src/core/../api/Plugin.hpp:
+
+src/core/PropertyManager.hpp:
+
+src/core/../../src/api/Interfaces/IPropertyManager.hpp:
+
+src/core/../../src/api/Interfaces/IProperty.hpp:
+
+/usr/include/sigc++-2.0/sigc++/sigc++.h:
+
+/usr/include/sigc++-2.0/sigc++/signal.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/list:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_list.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/list.tcc:
+
+/usr/include/sigc++-2.0/sigc++/signal_base.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstddef:
+
+/usr/lib/sigc++-2.0/include/sigc++config.h:
+
+/usr/include/sigc++-2.0/sigc++/type_traits.h:
+
+/usr/include/sigc++-2.0/sigc++/trackable.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/slot.h:
+
+/usr/include/sigc++-2.0/sigc++/visit_each.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/functor_trait.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/mem_fun.h:
+
+/usr/include/sigc++-2.0/sigc++/limit_reference.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/slot_base.h:
+
+/usr/include/sigc++-2.0/sigc++/connection.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bind.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h:
+
+/usr/include/sigc++-2.0/sigc++/reference_wrapper.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/hide.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/retype.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/compose.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/lambda.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/operator.h:
+
+/usr/include/sigc++-2.0/sigc++/adaptors/lambda/group.h:
+
+/usr/include/sigc++-2.0/sigc++/functors/functors.h:
+
+src/core/../../src/api/Interfaces/ITimelineEditor.hpp:
+
+src/core/../api/Interfaces/ISettingsPlugin.hpp:
+
+src/core/../api/Interfaces/../Config.hpp:
+
+src/core/../api/Interfaces/../Plugin.hpp:
+
+src/core/../api/Interfaces/IMainWindowPlugin.hpp:
+
+src/core/../api/Interfaces/../PluginManager.hpp:
+
+src/core/../api/Interfaces/ICanvasElementFactory.hpp:
+
+src/core/../api/Interfaces/ICanvasElement.hpp:
+
+src/core/../api/Interfaces/IPropertyManager.hpp:
+
+/usr/local/include/SFML/Graphics.hpp:
+
+/usr/local/include/SFML/Window.hpp:
+
+/usr/local/include/SFML/System.hpp:
+
+/usr/local/include/SFML/Config.hpp:
+
+/usr/local/include/SFML/System/Clock.hpp:
+
+/usr/local/include/SFML/System/Export.hpp:
+
+/usr/local/include/SFML/System/Time.hpp:
+
+/usr/local/include/SFML/System/Err.hpp:
+
+/usr/local/include/SFML/System/InputStream.hpp:
+
+/usr/local/include/SFML/System/Lock.hpp:
+
+/usr/local/include/SFML/System/NonCopyable.hpp:
+
+/usr/local/include/SFML/System/Mutex.hpp:
+
+/usr/local/include/SFML/System/Sleep.hpp:
+
+/usr/local/include/SFML/System/String.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/locale:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets_nonio.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/ctime:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/time_members.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/x86_64-unknown-linux-gnu/bits/messages_members.h:
+
+/usr/include/libintl.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/codecvt.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/locale_facets_nonio.tcc:
+
+/usr/local/include/SFML/System/Thread.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/local/include/SFML/System/Thread.inl:
+
+/usr/local/include/SFML/System/ThreadLocal.hpp:
+
+/usr/local/include/SFML/System/ThreadLocalPtr.hpp:
+
+/usr/local/include/SFML/System/ThreadLocalPtr.inl:
+
+/usr/local/include/SFML/System/Utf.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/algorithm:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_algo.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/algorithmfwd.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_heap.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/stl_tempbuf.h:
+
+/usr/local/include/SFML/System/Utf.inl:
+
+/usr/local/include/SFML/System/Vector2.hpp:
+
+/usr/local/include/SFML/System/Vector2.inl:
+
+/usr/local/include/SFML/System/Vector3.hpp:
+
+/usr/local/include/SFML/System/Vector3.inl:
+
+/usr/local/include/SFML/Window/Context.hpp:
+
+/usr/local/include/SFML/Window/Export.hpp:
+
+/usr/local/include/SFML/Window/GlResource.hpp:
+
+/usr/local/include/SFML/Window/ContextSettings.hpp:
+
+/usr/local/include/SFML/Window/Event.hpp:
+
+/usr/local/include/SFML/Window/Joystick.hpp:
+
+/usr/local/include/SFML/Window/Keyboard.hpp:
+
+/usr/local/include/SFML/Window/Mouse.hpp:
+
+/usr/local/include/SFML/Window/VideoMode.hpp:
+
+/usr/local/include/SFML/Window/Window.hpp:
+
+/usr/local/include/SFML/Window/WindowHandle.hpp:
+
+/usr/local/include/SFML/Window/WindowStyle.hpp:
+
+/usr/local/include/SFML/Graphics/BlendMode.hpp:
+
+/usr/local/include/SFML/Graphics/Color.hpp:
+
+/usr/local/include/SFML/Graphics/Export.hpp:
+
+/usr/local/include/SFML/Graphics/Font.hpp:
+
+/usr/local/include/SFML/Graphics/Glyph.hpp:
+
+/usr/local/include/SFML/Graphics/Rect.hpp:
+
+/usr/local/include/SFML/Graphics/Rect.inl:
+
+/usr/local/include/SFML/Graphics/Texture.hpp:
+
+/usr/local/include/SFML/Graphics/Image.hpp:
+
+/usr/local/include/SFML/Graphics/RenderStates.hpp:
+
+/usr/local/include/SFML/Graphics/Transform.hpp:
+
+/usr/local/include/SFML/Graphics/RenderTexture.hpp:
+
+/usr/local/include/SFML/Graphics/RenderTarget.hpp:
+
+/usr/local/include/SFML/Graphics/View.hpp:
+
+/usr/local/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/local/include/SFML/Graphics/Vertex.hpp:
+
+/usr/local/include/SFML/Graphics/RenderWindow.hpp:
+
+/usr/local/include/SFML/Graphics/Shader.hpp:
+
+/usr/local/include/SFML/Graphics/Shape.hpp:
+
+/usr/local/include/SFML/Graphics/Drawable.hpp:
+
+/usr/local/include/SFML/Graphics/Transformable.hpp:
+
+/usr/local/include/SFML/Graphics/VertexArray.hpp:
+
+/usr/local/include/SFML/Graphics/CircleShape.hpp:
+
+/usr/local/include/SFML/Graphics/RectangleShape.hpp:
+
+/usr/local/include/SFML/Graphics/ConvexShape.hpp:
+
+/usr/local/include/SFML/Graphics/Sprite.hpp:
+
+/usr/local/include/SFML/Graphics/Text.hpp:
+
+src/core/../api/Interfaces/IGroupCanvasElement.hpp:
+
+src/core/../api/Interfaces/ICanvasElementFactory.hpp:
+
+src/core/../api/Interfaces/IGroupCanvasElement.hpp:
+
+src/core/../api/Interfaces/ITimelineEditorFactory.hpp:
+
+src/core/../api/Interfaces/ITimelineEditor.hpp:
+
+src/core/../api/Interfaces/ITimelineEditor.hpp:
+
+src/core/../api/IApplication.hpp:
+
+src/core/../api/PluginManager.hpp:
+
+src/core/../api/Interfaces/ICanvasElement.hpp:
+
+src/core/../api/Interfaces/ICanvasElementFactory.hpp:
+
+src/core/../api/Interfaces/ITimelineEditorFactory.hpp:
+
+src/core/../api/Interfaces/ITimelineEditor.hpp:
+
+src/core/../api/Interfaces/Animation_management/IAnimationManager.hpp:
+
+src/core/../api/Interfaces/Animation_management/IAnimationSequence.hpp:
+
+src/core/../api/Interfaces/Animation_management/../../Plugin.hpp:
+
+src/core/../api/Interfaces/IGroupCanvasElement.hpp:

@@ -1,0 +1,12 @@
+CPP plugin system
+------------------
+
+This is a conceptual demo for a plugin system done for a team group at uni, that I tweaked a bit to make it more usable. It demonstrate the ability to lazy load some portions of your code in C++, thus having a highly extensible applications.
+
+However, this system suffers of limitations :
+
+	- Plugins highly depends on operating systems due to different dynamic linking APIs throughout different existing OS
+	- Plugins might also not work if compiled with different compilers (or even different versions of them) because the layout of the vtable is sadly not a standard...
+
+
+If you have a good proposal to make it (even a little) more cross platform or less limited in any way,  don't hesitate to contact me!
