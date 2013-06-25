@@ -449,7 +449,7 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/gwen/Programmation/cpp/cpp-plugin-system'
+ac_pwd='/home/gwen/Programmation/cpp/game-engine'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -634,7 +634,7 @@ S["AM_BACKSLASH"]="\\"
 S["AM_DEFAULT_VERBOSITY"]="0"
 S["AM_DEFAULT_V"]="$(AM_DEFAULT_VERBOSITY)"
 S["AM_V"]="$(V)"
-S["subdirs"]=" Plugins/ExtensionLoader Plugins/TestPlugin Plugins/LuaScriptingPlugin"
+S["subdirs"]=" Plugins/JsonConfigurationFileManager Plugins/LuaScriptingPlugin"
 S["EGREP"]="/bin/grep -E"
 S["GREP"]="/bin/grep"
 S["CPP"]="gcc -E"
@@ -676,12 +676,12 @@ S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/install-sh"
-S["MAKEINFO"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/gwen/Programmation/cpp/cpp-plugin-system/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/install-sh"
+S["MAKEINFO"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/gwen/Programmation/cpp/game-engine/missing --run aclocal-1.11"
 S["VERSION"]="0.1"
 S["PACKAGE"]="cpp-plugin-system"
 S["CYGPATH_W"]="echo"

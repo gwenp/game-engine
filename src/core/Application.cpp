@@ -13,17 +13,20 @@ Application::~Application()
 
 void Application::loadPlugins(int argc, char *argv[])
 {
-	_pluginManager->loadPlugin("./Plugins/ExtensionLoader/ExtensionLoader.plg","makePlugin");
-	_pluginManager->loadPlugin("./Plugins/TestPlugin/TestPlugin.plg","makePlugin");
 	_pluginManager->loadPlugin("./Plugins/LuaScriptingPlugin/LuaScriptingPlugin.plg","makePlugin");
+	_pluginManager->loadPlugin("./Plugins/JsonConfigurationFileManager/JsonConfigurationFileManager.plg","makePlugin");
 
-	ITestPlugin* testPlugin = (ITestPlugin*) _pluginManager->getPluginByName("TestPlugin");
 	ITestPlugin* luaScriptingPlugin = (ITestPlugin*) _pluginManager->getPluginByName("LuaScriptingPlugin");
-
-	if(testPlugin != NULL)
-		testPlugin->displayTestInformation();
+	IConfigurationManager* config = (IConfigurationManager*) _pluginManager->getPluginByName("JsonConfigurationFileManager");
 
 	if(luaScriptingPlugin != NULL)
 		luaScriptingPlugin->displayTestInformation();
+
+	if(config != NULL)
+	{
+		IConfiguration* configFile = config->initializeSource("/home/gwen/Programmation/cpp/game-engine/data/test.json");
+		std::cout << configFile->getValue("encoding") << std::endl;
+	}
+
 }
 

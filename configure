@@ -728,8 +728,7 @@ PKG_CONFIG_LIBDIR
 LIBSIGC_CFLAGS
 LIBSIGC_LIBS
 CPP'
-ac_subdirs_all=' Plugins/ExtensionLoader
-						Plugins/TestPlugin
+ac_subdirs_all=' Plugins/JsonConfigurationFileManager
 						Plugins/LuaScriptingPlugin'
 
 # Initialize some variables set by options.
@@ -4703,7 +4702,7 @@ if test "$enable_plugins" = "yes"; then
 
 
 
-subdirs="$subdirs Plugins/ExtensionLoader Plugins/TestPlugin Plugins/LuaScriptingPlugin"
+subdirs="$subdirs Plugins/JsonConfigurationFileManager Plugins/LuaScriptingPlugin"
 
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: --- Plugin compilation enabled --- " >&5
 $as_echo "--- Plugin compilation enabled --- " >&6; }
