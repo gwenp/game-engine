@@ -228,13 +228,13 @@ psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/LuaScriptingPlugin
+subdirs =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/LuaScriptingPlugin
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
-SUBDIRS =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/LuaScriptingPlugin
+SUBDIRS =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/LuaScriptingPlugin
 INCLUDES = -I/usr/include/sigc++-2.0/
 cppPlugins_SOURCES = src/core/Application.cpp \
 						src/core/ConcretePluginManager.cpp \

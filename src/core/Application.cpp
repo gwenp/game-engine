@@ -16,10 +16,12 @@ void Application::loadPlugins(int argc, char *argv[])
 	_pluginManager->loadPlugin("./Plugins/LuaScriptingPlugin/LuaScriptingPlugin.plg","makePlugin");
 	_pluginManager->loadPlugin("./Plugins/JsonConfigurationFileManager/JsonConfigurationFileManager.plg","makePlugin");
 	_pluginManager->loadPlugin("./Plugins/Logger/Logger.plg","makePlugin");
+	_pluginManager->loadPlugin("./Plugins/OpenGL/OpenGL.plg","makePlugin");
 
 	ITestPlugin* luaScriptingPlugin = (ITestPlugin*) _pluginManager->getPluginByName("LuaScriptingPlugin");
 	IConfigurationManager* config = (IConfigurationManager*) _pluginManager->getPluginByName("JsonConfigurationFileManager");
 	ILogger* logger = (ILogger*) _pluginManager->getPluginByName("Logger");
+	IOpenGL* openGL = (IOpenGL*) _pluginManager->getPluginByName("OpenGL");
 
 	if(luaScriptingPlugin != NULL)
 		luaScriptingPlugin->displayTestInformation();
@@ -31,7 +33,10 @@ void Application::loadPlugins(int argc, char *argv[])
 		(*logger)("test", "log message");
 	}
 
-
-
+	if(openGL != NULL)
+	{
+		openGL->init();
+		openGL->mainLoop();
+	}
 }
 
