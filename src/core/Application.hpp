@@ -10,6 +10,7 @@
 
 #include "../api/IApplication.hpp"
 #include "../api/Interfaces/ITestPlugin.hpp"
+#include "../api/Interfaces/ILogger.hpp"
 #include "../api/Interfaces/Configuration/IConfigurationManager.hpp"
 
 /** 

@@ -34,6 +34,7 @@ AC_ARG_ENABLE([plugins],
 if test "$enable_plugins" = "yes"; then
 
 	AC_CONFIG_SUBDIRS([ Plugins/JsonConfigurationFileManager
+						Plugins/Logger
 						Plugins/LuaScriptingPlugin])
     AC_MSG_RESULT( --- Plugin compilation enabled --- )
 else
