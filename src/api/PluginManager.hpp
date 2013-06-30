@@ -10,7 +10,6 @@
 #include <utility>
 #include <iostream>
 
-
 /** 
 * @class PluginManager
 *
@@ -51,7 +50,7 @@ public:
 	*   @param name the name of the searched plugin
 	* 	@return pointer to plugin
 	*/
-	virtual Plugin* getPluginByName ( std::string name )=0;
+	virtual Plugin* getPluginByName ( std::string name, PluginKey key )=0;
 };
 
 

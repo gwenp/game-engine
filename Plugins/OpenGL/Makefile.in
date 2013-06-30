@@ -58,7 +58,7 @@ am_OpenGL_plg_OBJECTS = src/OpenGL.$(OBJEXT) \
 OpenGL_plg_OBJECTS = $(am_OpenGL_plg_OBJECTS)
 am__DEPENDENCIES_1 =
 OpenGL_plg_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-	$(am__DEPENDENCIES_1)
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 OpenGL_plg_LINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) \
 	$(OpenGL_plg_LDFLAGS) $(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@
@@ -126,6 +126,8 @@ INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
 LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
+LIBSIGC_CFLAGS = @LIBSIGC_CFLAGS@
+LIBSIGC_LIBS = @LIBSIGC_LIBS@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
 MAKEINFO = @MAKEINFO@
@@ -191,10 +193,11 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = subdir-objects
-INCLUDES = -I../../src/ 
+INCLUDES = -I../../src/ -I/usr/include/sigc++-2.0/
 OpenGL_plg_LDFLAGS = -shared -fPIC
-OpenGL_plg_LDADD = $(GL_LIBS) $(GLEW_LIBS) $(GLFW_LIBS)
-AM_CPPFLAGS = $(GL_CFLAGS) $(GLEW_CFLAGS) $(GLFW_CFLAGS) -fPIC -g
+OpenGL_plg_LDADD = $(GL_LIBS) $(GLEW_LIBS) $(GLFW_LIBS) $(LIBSIGC_LIBS)
+AM_CPPFLAGS = $(GL_CFLAGS) $(GLEW_CFLAGS) $(GLFW_CFLAGS) \
+	$(LIBSIGC_CFLAGS) -fPIC -g
 OpenGL_plg_SOURCES = src/OpenGL.cpp \
 				    ../../src/api/Plugin.cpp \
 					../../src/api/CommunicativeObject.cpp

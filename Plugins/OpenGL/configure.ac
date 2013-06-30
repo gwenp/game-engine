@@ -27,6 +27,8 @@ PKG_CHECK_MODULES([GL], [gl])
 PKG_CHECK_MODULES([GLEW], [glew])
 PKG_CHECK_MODULES([GLFW], [libglfw])
 
+PKG_CHECK_MODULES([LIBSIGC], [sigc++-2.0])
+
 # Checks for header files.
 
 # Checks for typedefs, structures, and compiler characteristics.

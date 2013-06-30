@@ -12,7 +12,12 @@ JsonConfiguration::JsonConfiguration(std::string fileUrl)
 	}
 }
 
-std::string JsonConfiguration::getValue(std::string path)
+std::string JsonConfiguration::valueString(std::string path, std::string defaultValue)
 {
-	return root.get(path, "" ).asString();
+	return root.get(path, defaultValue ).asString();
+}
+
+int JsonConfiguration::valueInt(std::string path, int defaultValue)
+{
+	return root.get(path, defaultValue ).asInt();
 }

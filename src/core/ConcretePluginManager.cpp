@@ -12,7 +12,6 @@ ConcretePluginManager::~ConcretePluginManager()
 	{
 		delete (*it);
 	}
-
 }
 
 std::pair<int,char**> ConcretePluginManager::getCommandLineArgs()
@@ -26,11 +25,18 @@ std::pair<int,char**> ConcretePluginManager::getCommandLineArgs()
 bool ConcretePluginManager::loadPlugin( std::string file, std::string factory_function)
 {
 	Plugin* p = (Plugin*) loadObjectFromBinary(file,factory_function);
-	p->onLoad();
 
 	if(p != NULL)
-	{
+	{		
+		readManifest(findManifestPath(file), p);
+		
 		_plugins.push_back(p);
+
+		std::pair<std::string, Plugin*> newPluginByName (p->getName(), p);
+		_pluginsByName.insert(newPluginByName);
+
+		std::pair<PluginKey, Plugin*> newPluginByKey(p->getKey(), p);
+		_pluginsByName.insert(newPluginByKey);
 		return true;
 	}
 	else
@@ -55,19 +61,31 @@ std::vector<Plugin*> ConcretePluginManager::getPluginsByType ( PluginType plugin
 	return pluginList;
 }
 
-Plugin* ConcretePluginManager::getPluginByName ( std::string name )
+Plugin* ConcretePluginManager::getPluginByName ( std::string name , PluginKey key)
 {
-	for (std::vector<Plugin*>::iterator it = _plugins.begin(); it != _plugins.end(); ++it)
+	return getPluginByName(name, key, false);
+}
+
+Plugin* ConcretePluginManager::getPluginByName ( std::string name , PluginKey key, bool forceAuthorization)
+{
+	if(forceAuthorization)
 	{
-		if(*it != NULL)
-		{
-			if((*it)->getName()==name)
-			{
-				return (*it);
-			}
-		}
+		return _pluginsByName[name];
+	}
+
+	if(isPluginAllowed(name, key))
+	{
+		return _pluginsByName[name];
 	}
 	return NULL;
+}
+
+void ConcretePluginManager::callOnLoad()
+{
+	for (std::map<std::string, Plugin*>::iterator it = _pluginsByName.begin(); it != _pluginsByName.end(); ++it)
+	{
+		(*it).second->onLoad();		
+	}
 }
 
 void* ConcretePluginManager::loadObjectFromBinary( const std::string& soFile, const std::string& makerFunction )
@@ -124,4 +142,83 @@ void* ConcretePluginManager::loadObjectFromBinary( const std::string& soFile, co
 
 	//byebye
 	return s;
+}
+
+std::string ConcretePluginManager::findManifestPath(std::string pluginSoPath)
+{
+	std::string::size_type i = pluginSoPath.rfind('/', pluginSoPath.length( ));
+	std::string manifestFileName = "Manifest.MF";
+
+	if (i != std::string::npos) 
+	{
+		pluginSoPath.replace(i+1, pluginSoPath.length(), manifestFileName);
+		return pluginSoPath;
+	}
+}	
+
+void ConcretePluginManager::readManifest(std::string path, Plugin* thePlugin)
+{
+	std::string line;
+	std::ifstream manifest;
+	manifest.open(path.c_str());
+	if (manifest.is_open())
+	{
+		while (manifest.good())
+		{
+			getline (manifest,line);
+			parseManifestLine(line, thePlugin);
+		}
+		manifest.close();
+	}
+
+	else std::cout 	<< "Unable to open manifest file for plugin " << thePlugin->getName() 
+					<< " (path : " << path << ")" << std::endl;
+}
+
+void ConcretePluginManager::parseManifestLine(std::string line, Plugin* thePlugin)
+{
+	std::vector<std::string> tokens = StringUtils::explode(line, ":");
+	if(tokens[0] == "uses" && tokens.size() == 2)
+	{
+		if ( _pluginAutorizationTable.find(thePlugin->getKey()) == _pluginAutorizationTable.end() ) {
+			// not found
+			_pluginAutorizationTable[thePlugin->getKey()] = std::vector<std::string> ();
+		}
+
+		std::vector<std::string> tokensUses = StringUtils::explode(tokens[1], ",");
+
+		for (std::vector<std::string>::iterator it = tokensUses.begin(); it != tokensUses.end(); ++it)
+		{
+			//fill the permission table from the exploded value
+			_pluginAutorizationTable[thePlugin->getKey()].push_back(*it);		
+		}
+
+
+	}	
+	void parseManifestLine();
+}
+
+bool ConcretePluginManager::isPluginAllowed(std::string destination, PluginKey key)
+{
+	if(_pluginAutorizationTable[key].empty() == false)
+	{
+		for (std::vector<std::string>::iterator it = _pluginAutorizationTable[key].begin(); 
+				it != _pluginAutorizationTable[key].end(); 
+				++it)
+		{
+			if((*it) == destination)
+			{
+				return true;
+			}
+		}
+	}
+
+	std::cout << "[error] Plugin " << destination << " call not allowed with key " << key << "!" << std::endl;
+	std::cout << "[error] Plugins allowed :" << std::endl;
+
+	for (std::vector<std::string>::iterator it = _pluginAutorizationTable[key].begin(); it != _pluginAutorizationTable[key].end(); ++it)
+	{
+		std::cout << "\t" << (*it) << std::endl;
+	}
+	return false;
 }

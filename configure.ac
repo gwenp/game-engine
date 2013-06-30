@@ -17,10 +17,6 @@ AC_CHECK_LIB([dl], [dlerror])
 PKG_CHECK_MODULES([LIBSIGC], [sigc++-2.0])
 
 # Checks for header files.
-AC_CHECK_HEADERS(GL/gl.h GL/glu.h,,
-         [AC_CHECK_HEADERS(OpenGL/gl.h OpenGL/glu.h,,
-           [echo "OpenGL is mandatory";exit 1])]
-)
 
 # Checks for typedefs, structures, and compiler characteristics.
 # Checks for library functions.
@@ -36,6 +32,9 @@ if test "$enable_plugins" = "yes"; then
 	AC_CONFIG_SUBDIRS([ Plugins/JsonConfigurationFileManager
                         Plugins/Logger
 						Plugins/OpenGL
+						Plugins/OpenGLScene
+						Plugins/OpenGLModelManager
+						Plugins/TextureRegistrar
 						Plugins/LuaScriptingPlugin])
     AC_MSG_RESULT( --- Plugin compilation enabled --- )
 else

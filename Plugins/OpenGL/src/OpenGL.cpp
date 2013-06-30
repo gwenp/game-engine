@@ -8,18 +8,20 @@ OpenGL::OpenGL(IApplication* app) : IOpenGL(app, "OpenGL")
 OpenGL::~OpenGL()
 {}
 
-bool OpenGL::init()
+void OpenGL::onLoad()
 {
+	initConfiguration();
+
 	// Initialise GLFW
 	if( !glfwInit() )
 	{
-	    // fprintf( stderr, "Failed to initialize GLFW\n" );
-	    return false;
+		// fprintf( stderr, "Failed to initialize GLFW\n" );
+	    return ;
 	}
 
-	glfwOpenWindowHint(GLFW_FSAA_SAMPLES, 4); // 4x antialiasing
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3); // We want OpenGL 3.3
-	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 3);
+	glfwOpenWindowHint(GLFW_FSAA_SAMPLES, _cfg->valueInt("aliasing", 4)); // 4x antialiasing
+	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, _cfg->valueInt("opengl version major", 3)); // We want OpenGL 3.3
+	glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, _cfg->valueInt("opengl version minor", 3));
 	glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //We don't want the old OpenGL
 	 
 	// Open a window and create its OpenGL context
@@ -27,27 +29,39 @@ bool OpenGL::init()
 	{
 	    // fprintf( stderr, "Failed to open GLFW window\n" );
 	    glfwTerminate();
-	    return false;
+	    return ;
 	}
-	 
+	
 	// Initialize GLEW
 	glewExperimental=true; // Needed in core profile
 	if (glewInit() != GLEW_OK) {
 	    // fprintf(stderr, "Failed to initialize GLEW\n");
-	    return false;
+	    return ;
 	}
-	 
-	glfwSetWindowTitle( "OpenGL Window" );
+	
+	glfwSetWindowTitle( _cfg->valueString("window name", "default title").c_str() );
 
 	// Ensure we can capture the escape key being pressed below
 	glfwEnable( GLFW_STICKY_KEYS );
 }
 
-bool OpenGL::mainLoop()
+void OpenGL::signal_onOpenGLLoadedHook(sigc::slot<void> slot)
 {
+	signal_onOpenGLLoaded.connect(slot);
+}
+
+void OpenGL::registerFunctionInMainLoop(sigc::slot<void> slot)
+{
+	signal_mainLoop.connect(slot);
+}
+
+bool OpenGL::mainLoop()
+{	
+	signal_onOpenGLLoaded();
+
 	do{
-	    // Draw nothing, see you in tutorial 2 !
-	 
+
+		signal_mainLoop();
 		// Swap buffers
 		glfwSwapBuffers();
 	 
@@ -55,6 +69,20 @@ bool OpenGL::mainLoop()
 	while( glfwGetKey( GLFW_KEY_ESC ) != GLFW_PRESS && glfwGetWindowParam( GLFW_OPENED ) );
 
 	return true;
+}
+
+void OpenGL::initConfiguration()
+{
+	IConfigurationManager* configPlugin = (IConfigurationManager*) getPlugin("JsonConfigurationFileManager");
+
+	if(configPlugin != NULL)
+	{
+		_cfg = configPlugin->initializeSource("data/config/opengl.json");
+	}
+	else
+	{
+		std::cout << "ConfigurationManager plugin impossible to reach !" << std::endl;
+	}
 }
 
 extern "C"

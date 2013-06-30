@@ -2,8 +2,6 @@
 #define DEF_PLUGIN
 
 
-//TODO dynamise this shit
-enum PluginType { EXPORT, GUI, PARSER, GFXEMBED, GFX, TOOL, STRATEGY, PROJECTMANAGER, POLICY };
 
 #include "CommunicativeObject.hpp"
 
@@ -13,6 +11,11 @@ enum PluginType { EXPORT, GUI, PARSER, GFXEMBED, GFX, TOOL, STRATEGY, PROJECTMAN
 
 class IApplication;
 class PluginManager;
+
+//TODO dynamise this shit
+enum PluginType { EXPORT, GUI, PARSER, GFXEMBED, GFX, TOOL, STRATEGY, PROJECTMANAGER, POLICY };
+typedef std::string PluginKey;
+
 
 /** 
 * @class Plugin
@@ -43,19 +46,25 @@ public:
 	virtual PluginType getType();
 
 	/**
-	 * @brief PluginManager getter
-	 * @return the PluginManager interface
-	 */
-	virtual PluginManager* getPluginManager();
-
-	/**
 	 * @brief Application getter
 	 * @return the Application interface
 	 */
 	virtual IApplication* getApplication();
 
+	PluginKey getKey();
+
 protected:
+
+	Plugin* getPlugin(std::string pluginName);
+
 private:
+	/**
+	 * @brief PluginManager getter
+	 * @return the PluginManager interface
+	 */
+	PluginManager* getPluginManager();
+
+
 	std::map<std::string, bool> _methods;
 
 	IApplication* _app;

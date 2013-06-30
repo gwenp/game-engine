@@ -10,7 +10,8 @@ class JsonConfiguration : public IConfiguration
 public:
 	JsonConfiguration(std::string fileUrl);
 
-	virtual std::string getValue(std::string path);
+	virtual std::string valueString(std::string path, std::string defaultValue);
+	virtual int valueInt(std::string path, int defaultValue);
 
 private:
 	Json::Value root;

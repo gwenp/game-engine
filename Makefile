@@ -52,7 +52,8 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_cppPlugins_OBJECTS = Application.$(OBJEXT) \
 	ConcretePluginManager.$(OBJEXT) main.$(OBJEXT) \
-	CommunicativeObject.$(OBJEXT) Plugin.$(OBJEXT)
+	StringUtils.$(OBJEXT) CommunicativeObject.$(OBJEXT) \
+	Plugin.$(OBJEXT)
 cppPlugins_OBJECTS = $(am_cppPlugins_OBJECTS)
 am__DEPENDENCIES_1 =
 cppPlugins_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -147,7 +148,6 @@ AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CPP = gcc -E
 CPPFLAGS = 
 CXX = clang++
 CXXDEPMODE = depmode=gcc3
@@ -158,9 +158,7 @@ DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /bin/grep -E
 EXEEXT = 
-GREP = /bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -228,17 +226,18 @@ psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
-subdirs =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/LuaScriptingPlugin
+subdirs =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/OpenGLScene Plugins/OpenGLModelManager Plugins/TextureRegistrar Plugins/LuaScriptingPlugin
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
-SUBDIRS =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/LuaScriptingPlugin
+SUBDIRS =  Plugins/JsonConfigurationFileManager Plugins/Logger Plugins/OpenGL Plugins/OpenGLScene Plugins/OpenGLModelManager Plugins/TextureRegistrar Plugins/LuaScriptingPlugin
 INCLUDES = -I/usr/include/sigc++-2.0/
 cppPlugins_SOURCES = src/core/Application.cpp \
 						src/core/ConcretePluginManager.cpp \
                         src/core/main.cpp \
+                        src/utility/StringUtils.cpp \
 						src/api/CommunicativeObject.cpp \
 						src/api/Plugin.cpp \
 						$(NULL)
@@ -350,6 +349,7 @@ include ./$(DEPDIR)/Application.Po
 include ./$(DEPDIR)/CommunicativeObject.Po
 include ./$(DEPDIR)/ConcretePluginManager.Po
 include ./$(DEPDIR)/Plugin.Po
+include ./$(DEPDIR)/StringUtils.Po
 include ./$(DEPDIR)/main.Po
 
 .cpp.o:
@@ -407,6 +407,20 @@ main.obj: src/core/main.cpp
 #	$(AM_V_CXX)source='src/core/main.cpp' object='main.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o main.obj `if test -f 'src/core/main.cpp'; then $(CYGPATH_W) 'src/core/main.cpp'; else $(CYGPATH_W) '$(srcdir)/src/core/main.cpp'; fi`
+
+StringUtils.o: src/utility/StringUtils.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT StringUtils.o -MD -MP -MF $(DEPDIR)/StringUtils.Tpo -c -o StringUtils.o `test -f 'src/utility/StringUtils.cpp' || echo '$(srcdir)/'`src/utility/StringUtils.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/StringUtils.Tpo $(DEPDIR)/StringUtils.Po
+#	$(AM_V_CXX)source='src/utility/StringUtils.cpp' object='StringUtils.o' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o StringUtils.o `test -f 'src/utility/StringUtils.cpp' || echo '$(srcdir)/'`src/utility/StringUtils.cpp
+
+StringUtils.obj: src/utility/StringUtils.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT StringUtils.obj -MD -MP -MF $(DEPDIR)/StringUtils.Tpo -c -o StringUtils.obj `if test -f 'src/utility/StringUtils.cpp'; then $(CYGPATH_W) 'src/utility/StringUtils.cpp'; else $(CYGPATH_W) '$(srcdir)/src/utility/StringUtils.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/StringUtils.Tpo $(DEPDIR)/StringUtils.Po
+#	$(AM_V_CXX)source='src/utility/StringUtils.cpp' object='StringUtils.obj' libtool=no \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o StringUtils.obj `if test -f 'src/utility/StringUtils.cpp'; then $(CYGPATH_W) 'src/utility/StringUtils.cpp'; else $(CYGPATH_W) '$(srcdir)/src/utility/StringUtils.cpp'; fi`
 
 CommunicativeObject.o: src/api/CommunicativeObject.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT CommunicativeObject.o -MD -MP -MF $(DEPDIR)/CommunicativeObject.Tpo -c -o CommunicativeObject.o `test -f 'src/api/CommunicativeObject.cpp' || echo '$(srcdir)/'`src/api/CommunicativeObject.cpp

@@ -7,17 +7,11 @@ Plugin::Plugin(IApplication* app,std::string name, PluginType type) : Communicat
 {}
 
 Plugin::~Plugin()
-{
-}
+{}
 
 PluginType Plugin::getType()
 {
 	return _type;
-}
-
-PluginManager* Plugin::getPluginManager()
-{
-	return _app->getPluginManager();
 }
 
 IApplication* Plugin::getApplication()
@@ -25,3 +19,19 @@ IApplication* Plugin::getApplication()
 	return _app;
 }
 
+PluginKey Plugin::getKey()
+{
+	return getName();
+}
+
+
+Plugin* Plugin::getPlugin(std::string pluginName)
+{
+	return getPluginManager()->getPluginByName(pluginName, getKey());
+}
+
+
+PluginManager* Plugin::getPluginManager()
+{
+	return _app->getPluginManager();
+}
